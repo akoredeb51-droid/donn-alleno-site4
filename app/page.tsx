@@ -21,10 +21,10 @@ export default function HomePage() {
               <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#e87520]">
                 DONN ALLENO marketplace
               </p>
-              <h1 className="serif mt-5 text-5xl leading-[1.02] text-[#171412] md:text-7xl">
+              <h1 className="serif mt-5 text-5xl leading-[1.02] text-white md:text-7xl">
                 Your style. <span className="text-[#e87520]">Your statement.</span>
               </h1>
-              <p className="mt-6 max-w-xl text-lg text-stone-700">
+              <p className="mt-6 max-w-xl text-lg text-[#c1cfe0]">
                 Elevated senator wear, contemporary suiting, and signature silhouettes built with precision, comfort, and presence.
               </p>
 
@@ -32,16 +32,16 @@ export default function HomePage() {
                 <Link href="/shop" className="btn btn-orange">
                   Shop now
                 </Link>
-                <Link href="/about" className="btn btn-light">
+                <Link href="/about" className="btn btn-light !border-[#f58220] !text-white hover:!bg-[#f58220]">
                   Our story
                 </Link>
               </div>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
                 {highlights.map((item) => (
-                  <div key={item.label} className="rounded-lg border border-[#ead8c8] bg-white p-4 shadow-sm">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-500">{item.label}</div>
-                    <div className="mt-2 text-lg font-semibold text-[#171412]">{item.value}</div>
+                  <div key={item.label} className="rounded-lg border border-[#426486] bg-[#102b4c]/90 p-4 shadow-sm">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#91a9c4]">{item.label}</div>
+                    <div className="mt-2 text-lg font-semibold text-white">{item.value}</div>
                   </div>
                 ))}
               </div>
@@ -68,9 +68,9 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-5 border-b border-[#e7dcc9] pb-6">
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#e87520]">Shop by category</p>
-            <h2 className="serif mt-3 text-4xl text-[#171412] md:text-5xl">Featured essentials</h2>
+            <h2 className="serif mt-3 text-4xl text-white md:text-5xl">Featured essentials</h2>
           </div>
-          <Link href="/shop" className="hidden text-[11px] font-bold uppercase tracking-[0.18em] text-[#171412] md:inline-block">
+          <Link href="/shop" className="hidden text-[11px] font-bold uppercase tracking-[0.18em] text-[#f9a15d] md:inline-block">
             Shop all →
           </Link>
         </div>
