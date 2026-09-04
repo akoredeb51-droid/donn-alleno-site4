@@ -45,13 +45,11 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
-              <div className="absolute -left-8 top-8 h-32 w-32 rounded-full bg-[#c6a15b]/20 blur-3xl" />
-              <div className="absolute -right-8 bottom-10 h-40 w-40 rounded-full bg-[#d6c4a1]/30 blur-3xl" />
-              <div className="relative overflow-hidden rounded-[32px] border border-[#eadfce] bg-[#f0e6db] p-4 shadow-[0_30px_60px_rgba(0,0,0,0.08)]">
+              <div className="relative overflow-hidden rounded-[32px] border border-[#eadfce] bg-[#171412] p-3 shadow-[0_30px_60px_rgba(0,0,0,0.14)]">
                 <img
-                  src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=900"
-                  alt="Male luxury fashion"
-                  className="h-[520px] w-full rounded-[24px] object-cover"
+                  src="/images/hero-senator.jpg"
+                  alt="DONN ALLENO senator look"
+                  className="h-[520px] w-full rounded-[24px] object-cover object-center"
                 />
                 <div className="absolute left-8 bottom-8 rounded-2xl border border-white/40 bg-[#171412]/70 px-5 py-4 text-white backdrop-blur-sm">
                   <p className="text-[10px] uppercase tracking-[0.25em] text-[#d9c399]">Signature</p>

@@ -21,7 +21,9 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #f8f5f0 0%, #f1ece5 100%);
+  background-color: #f5f1ea;
+  background-image: linear-gradient(rgba(198, 161, 91, 0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(198, 161, 91, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
   color: var(--ink);
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
@@ -132,7 +134,12 @@ img {
 }
 
 .hero-glow {
-  background: radial-gradient(circle at top left, rgba(198, 161, 91, 0.14), transparent 45%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(245, 241, 234, 0.32)), url('/images/collection-new-arrivals.jpg') right center / 48% auto no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .hero-glow {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(245, 241, 234, 0.5));
+  }
 }
 
