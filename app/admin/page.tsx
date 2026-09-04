@@ -7,8 +7,18 @@ export default function Admin() {
 	const [orders, setOrders] = useState<any[]>([]);
 
 	useEffect(() => {
-		const savedOrder = JSON.parse(localStorage.getItem('da-last-order') || 'null');
-		if (savedOrder) setOrders([savedOrder]);
+		const loadOrders = async () => {
+			try {
+				const response = await fetch('http://127.0.0.1:5000/api/orders');
+				if (!response.ok) throw new Error('Unable to load orders');
+				setOrders(await response.json());
+			} catch {
+				const savedOrder = JSON.parse(localStorage.getItem('da-last-order') || 'null');
+				if (savedOrder) setOrders([savedOrder]);
+			}
+		};
+
+		loadOrders();
 	}, []);
 
 	return (
