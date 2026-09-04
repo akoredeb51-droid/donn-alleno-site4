@@ -21,6 +21,7 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
   background-color: #071a33;
   background-image: linear-gradient(rgba(110, 159, 213, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(110, 159, 213, 0.08) 1px, transparent 1px);
   background-size: 56px 56px;
@@ -158,7 +159,33 @@ img {
 
 @media (max-width: 1023px) {
   .hero-glow {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(245, 241, 234, 0.5));
+    background: linear-gradient(135deg, rgba(4, 18, 38, 0.98), rgba(7, 26, 51, 0.86)), url('/images/collection-new-arrivals.jpg') center / cover no-repeat;
   }
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid #55d889;
+  border-radius: 999px;
+  background: #19a95b;
+  padding: 0.85rem 1.15rem;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  background: #128c4b;
+  transform: translateY(-3px);
 }
 
