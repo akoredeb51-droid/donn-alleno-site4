@@ -67,16 +67,23 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="flex items-end justify-between gap-5 border-b border-[#e7dcc9] pb-6">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#e87520]">Shop by category</p>
-            <h2 className="serif mt-3 text-4xl text-white md:text-5xl">Featured essentials</h2>
+            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#e87520]">Premium Fabrics. Perfect Tailoring.</p>
+            <h2 className="serif mt-3 text-4xl text-white md:text-5xl">THE SENATOR COLLECTION</h2>
+            <p className="mt-3 text-base text-[#c1cfe0]">Handcrafted Luxury. Tailored for Kings.</p>
           </div>
           <Link href="/shop" className="hidden text-[11px] font-bold uppercase tracking-[0.18em] text-[#f9a15d] md:inline-block">
             Shop all →
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {products.slice(0, 3).map((product) => (
+        <div className="mt-8 border border-[#d2a91f] bg-[#f5c518] px-5 py-4 text-center text-sm font-bold uppercase tracking-[0.08em] text-[#171412]">
+          🎉 SPECIAL OFFER: Buy 2 for ₦95,000 Only! Save ₦65,000 - Limited Time
+        </div>
+
+        <p className="mt-6 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f9a15d]">Made in Nigeria. Worn by Executives.</p>
+
+        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+          {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

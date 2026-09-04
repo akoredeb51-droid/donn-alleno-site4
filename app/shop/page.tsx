@@ -6,7 +6,7 @@ import { Suspense } from 'react';
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/lib/products';
 
-const categories = ['All', 'Senator', 'Suits', 'Agbada'];
+const categories = ['All', 'Senator Collection', 'Bundle Offer'];
 
 function ShopContent() {
   const q = useSearchParams().get('category');
