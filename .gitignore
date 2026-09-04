@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# next build output
+.next/
+out/
+build/
+
+# production
+.vercel/
+
+# env files
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# system files
+.DS_Store
+Thumbs.db
+
+# editor files
+.vscode/
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
