@@ -9,7 +9,7 @@ export default function Admin() {
 	useEffect(() => {
 		const loadOrders = async () => {
 			try {
-				const response = await fetch('http://127.0.0.1:5000/api/orders');
+				const response = await fetch('https://donn-alleno-site4-2.onrender.com/api/orders');
 				if (!response.ok) throw new Error('Unable to load orders');
 				setOrders(await response.json());
 			} catch {
