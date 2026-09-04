@@ -10,7 +10,7 @@ const highlights = [
 
 export default function HomePage() {
   return (
-    <main className="marketplace-bg min-h-screen">
+    <main className="marketplace-bg min-h-screen bg-gray-950">
       <section className="bg-[#171412] px-5 py-3 text-center text-xs font-bold uppercase tracking-[0.18em] text-[#ffd8b7]">
         Free delivery on selected orders nationwide <span className="mx-2 text-[#f58220]">•</span> Shop the new collection
       </section>
