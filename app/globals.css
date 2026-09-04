@@ -3,8 +3,8 @@
 :root {
   --ink: #171412;
   --ink-soft: #4a423d;
-  --gold: #c6a15b;
-  --gold-deep: #9d7d3d;
+  --gold: #f58220;
+  --gold-deep: #d85d16;
   --cream: #f5f1ea;
   --panel: #fbf9f6;
   --line: rgba(23, 20, 18, 0.08);
@@ -25,7 +25,7 @@ body {
   background-image: linear-gradient(rgba(198, 161, 91, 0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(198, 161, 91, 0.045) 1px, transparent 1px);
   background-size: 56px 56px;
   color: var(--ink);
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: var(--font-body), sans-serif;
   line-height: 1.6;
 }
 
@@ -35,8 +35,9 @@ img {
 }
 
 .serif {
-  font-family: Georgia, 'Times New Roman', serif;
-  letter-spacing: 0.04em;
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: 0.01em;
+  font-weight: 600;
 }
 
 .gold {
@@ -70,6 +71,17 @@ img {
   background: #111;
   color: #fff;
   border-color: #111;
+}
+
+.btn-orange {
+  background: #f58220;
+  color: #fff;
+  border-color: #f58220;
+}
+
+.btn-orange:hover {
+  background: #d85d16;
+  border-color: #d85d16;
 }
 
 .btn-dark:hover {
@@ -134,7 +146,14 @@ img {
 }
 
 .hero-glow {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(245, 241, 234, 0.32)), url('/images/collection-new-arrivals.jpg') right center / 48% auto no-repeat;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 247, 239, 0.82) 48%, rgba(255, 255, 255, 0.22) 100%), url('/images/collection-new-arrivals.jpg') right center / cover no-repeat;
+}
+
+.marketplace-bg {
+  background-color: #f4f5f7;
+  background-image: linear-gradient(135deg, rgba(245, 130, 32, 0.06) 25%, transparent 25%), linear-gradient(315deg, rgba(245, 130, 32, 0.035) 25%, transparent 25%);
+  background-position: 0 0, 28px 28px;
+  background-size: 56px 56px;
 }
 
 @media (max-width: 1023px) {

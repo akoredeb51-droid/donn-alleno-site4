@@ -10,24 +10,27 @@ const highlights = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#f8f4ef]">
+    <main className="marketplace-bg min-h-screen">
+      <section className="bg-[#171412] px-5 py-3 text-center text-xs font-bold uppercase tracking-[0.18em] text-[#ffd8b7]">
+        Free delivery on selected orders nationwide <span className="mx-2 text-[#f58220]">•</span> Shop the new collection
+      </section>
       <section className="hero-glow relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-5 py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-5 py-12 md:py-20">
           <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#b08c46]">
-                Modern Nigerian Luxury
+              <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#e87520]">
+                DONN ALLENO marketplace
               </p>
               <h1 className="serif mt-5 text-5xl leading-[1.02] text-[#171412] md:text-7xl">
-                Crafted for the <span className="gold">confident man</span>.
+                Your style. <span className="text-[#e87520]">Your statement.</span>
               </h1>
               <p className="mt-6 max-w-xl text-lg text-stone-700">
                 Elevated senator wear, contemporary suiting, and signature silhouettes built with precision, comfort, and presence.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/shop" className="btn btn-dark">
-                  Shop collection
+                <Link href="/shop" className="btn btn-orange">
+                  Shop now
                 </Link>
                 <Link href="/about" className="btn btn-light">
                   Our story
@@ -36,7 +39,7 @@ export default function HomePage() {
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
                 {highlights.map((item) => (
-                  <div key={item.label} className="rounded-2xl border border-[#e7dcc9] bg-white/70 p-4 backdrop-blur-sm">
+                  <div key={item.label} className="rounded-lg border border-[#ead8c8] bg-white p-4 shadow-sm">
                     <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-500">{item.label}</div>
                     <div className="mt-2 text-lg font-semibold text-[#171412]">{item.value}</div>
                   </div>
@@ -61,11 +64,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-5 py-20">
+      <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="flex items-end justify-between gap-5 border-b border-[#e7dcc9] pb-6">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#b08c46]">Featured</p>
-            <h2 className="serif mt-3 text-4xl text-[#171412] md:text-5xl">Curated essentials</h2>
+            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#e87520]">Shop by category</p>
+            <h2 className="serif mt-3 text-4xl text-[#171412] md:text-5xl">Featured essentials</h2>
           </div>
           <Link href="/shop" className="hidden text-[11px] font-bold uppercase tracking-[0.18em] text-[#171412] md:inline-block">
             Shop all →
@@ -79,7 +82,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-5 pb-24">
+      <section className="mx-auto max-w-7xl px-5 pb-24">
         <div className="grid gap-8 rounded-[32px] border border-[#e7dcc9] bg-[#171412] p-8 text-white md:grid-cols-[1.1fr_0.9fr] md:p-12">
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#d7b66f]">The DONN promise</p>
